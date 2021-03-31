@@ -11,5 +11,9 @@ app.get('/test2', function(req, res) {
     res.sendFile(path.join(__dirname + '/index2.html'));
 });
 
+app.get('/test3', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index3.html'));
+});
+
 const PORT = process.env.PORT || 5555;
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
